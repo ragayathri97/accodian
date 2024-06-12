@@ -1,0 +1,111 @@
+ *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+ }
+ .flex-element{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .content-width{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 80px 0;
+ }
+ img{
+    width: 100%;
+ }
+ /* Accordion */
+ .accordion-elm{
+    overflow: hidden;
+    
+    }
+    .accordion-elm .flex-element{
+    margin-top:50px;
+    }
+    .accordion-img{
+    width:55%;
+    position: relative;
+    height: 700px;
+    }
+    .accordionite-item{
+    width: 100%;
+    position: absolute;
+     top: 50%; 
+     left: 0; 
+     opacity: 0; 
+     transform: translateY(-50%);
+     z-index: 1;
+    }
+    .accordionite-item.active{
+    opacity: 1;
+    }
+    .accordion-cnt{
+    width:45%;
+    padding-right:5%;
+    }
+    .accordion-cnt ul li{
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+    /* border-bottom: 1px solid #eae9e9; */
+    }
+    .accordion-cnt ul li h4{
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    padding: 5px 0px;
+    }
+    .accordion-cnt ul li.active h4{
+    color:#0D04E3;
+    }
+    .accordion-cnt ul li .accordion-des{
+    display: none;
+    }
+    .accordion-cnt ul li:first-child .accordion-des{
+    display: block;
+    }
+    .accordion-cnt ul li p{
+    max-width: 400px;
+    }
+    .accordion-cnt ul li img{
+    margin-bottom: 20px;
+    display: none;
+    }
+    /* End Accordion */
+    @media all and (max-width:1200px) {
+    /* Accordion  */
+    .accordion-img{
+        height: 600px;
+    }
+    /* End Accordion  */
+    }
+    @media all and (max-width:991px) {
+      /* Accordion  */
+      .accordion-img{
+        height: 450px;
+    }
+    /* End Accordion  */
+    }
+    @media all and (max-width:767px) {
+      /* Accordion */
+      .accordion-img{
+        display: none;
+    }
+    .zcr-acc-cnt{
+        width: 100%;
+    }
+    .zcr-acc-cnt ul li:last-child{
+        margin-bottom: 0;
+    }
+    .zcr-acc-cnt ul li:first-child img{
+        display:block;
+    }
+    .zcr-acc-cnt ul li img{
+        display: block;
+    }
+    /* End Accordion */
+    }

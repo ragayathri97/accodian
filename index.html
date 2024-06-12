@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordion</title>
+    <link rel="stylesheet" href="style.css">
+    <section class="accordion-elm">
+        <div class="content-width">
+  
+            <h2>Utilize BI to boost every function of your business</h2>
+  
+          <div class="flex-element">
+            <div class="accordion-cnt">
+              <ul>
+                <li class="active">
+                  <h4>heading111111111111111</h4>
+                  <div class="accordion-des">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo earum iste, ipsa ad facilis eos fugit culpa vel amet commodi!</p>
+                    <img src="" alt="">
+                  </div>
+                </li>
+                <li>
+                  <h4>heading2222222222</h4>
+                  <div class="accordion-des">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, dolorem est inventore facere, iure dolorum unde adipisci similique alias, voluptatibus ipsam sed ratione voluptas omnis hic doloremque delectus ipsum ullam.</p>
+                    <img src="" alt="">
+                  </div>
+                </li>
+                <li>
+                  <h4>heading33333333333</h4>
+                  <div class="accordion-des">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam itaque quasi eaque unde odio beatae est at ipsum id assumenda.</p>
+                    <img src="" alt="">
+                  </div>
+                </li>
+                <li>
+                  <h4>heading44444444444444</h4>
+                  <div class="accordion-des">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, expedita quae esse suscipit adipisci rem natus beatae quod repellat dolorem dolores voluptatibus. Possimus distinctio nulla nam tenetur perferendis neque sit!</p>
+                    <img src="" alt="">
+                  </div>
+                </li>
+                <li>
+                  <h4>heading555555555555</h4>
+                  <div class="accordion-des">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam itaque quasi eaque unde odio beatae est at ipsum id assumenda.</p>
+                    <img src="" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-img">
+              <div class="accordionite-item active">
+                <img src="" alt="">
+               
+              </div>
+              <div class="accordionite-item" style="display: none;">
+                <img src="" alt="">
+               
+              </div>
+              <div class="accordionite-item" style="display: none;">
+                <img src="" alt="">
+               
+              </div>
+              <div class="accordionite-item" style="display: none;">
+                <img src="" alt="">
+              
+              </div>
+              <div class="accordionite-item" style="display: none;">
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script>
+        // Accordion 
+  $('.accordion-cnt li').on('click', function() {
+  $(this).addClass('active').siblings().removeClass('active');
+  $('.accordion-cnt li .accordion-des').slideUp('slow');
+  $(this).find('.accordion-des').slideDown('slow');
+  
+  
+  var thisIndex = $(this).index();
+  $('.accordionite-item').fadeOut().removeClass('active');
+  $('.accordionite-item').eq(thisIndex).fadeIn().addClass('active');
+  
+  
+  });
+  // End Accordion
+      </script>
+  
+    </body>
+</html>
+  
